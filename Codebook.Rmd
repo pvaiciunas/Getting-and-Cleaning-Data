@@ -1,0 +1,28 @@
+---
+title: "CodeBook"
+author: "Peter Vaiciunas"
+date: "Sunday, March 22, 2015"
+output: html_document
+---
+
+This Codebook describes the variables, data, and transformations 
+used to arrive at the resulting data set in the project.
+
+The resulting data includes the following variables:
+* The activity name
+* The subject number
+* The varible measured
+* The average measurement of the variable
+
+There are 2,310 observations in the resulting data set
+
+A few steps were taken to reach this point:
+1. The training and test raw data were combined into one table
+2. The raw data was labeled with the names of the features being measured from the 
+features.txt file
+3. The data was then filtered down to only the mean and standard deviation measures
+4. The activity labels were changed from numbers to the actual activity names
+taken from the activity_labels.txt file
+5. This resulting data is then melted to make it tidy
+6. the measurements are then averaged for each subject and activity
+

@@ -1,0 +1,18 @@
+---
+title: "run_analysis.r Summary"
+author: "Peter Vaiciunas"
+date: "Sunday, March 22, 2015"
+output: html_document
+---
+
+The script below takes the following steps:
+
+* It loads all of the data from your working directory
+* Combines the training and test data
+* Loads the descriptive features of the data
+* Extracts only data related to the mean and standard deviation of each measurement
+* Adds descripttions to replace activity numbers
+* Melts the resulting data into a tidy data set
+* Summarizes the data by averageing the values for each subject and activity
+* Writes the resulting data to a .txt file in the working directory
+
